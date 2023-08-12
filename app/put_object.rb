@@ -50,7 +50,7 @@ def existence_check
   puts resp
 end
 
-def put_objects
+def put_object
   puts '===== ===== ===== ===== ====='
   puts '===== Putting Objects ====='
   puts '===== ===== ===== ===== ====='

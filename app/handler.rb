@@ -5,6 +5,7 @@ require 'dotenv'
 require_relative './existence_check'
 require_relative './list_objects'
 require_relative './put_object'
+require_relative './get_object'
 
 $s3_bucket_name = nil
 
@@ -18,5 +19,6 @@ def handler
 
   existence_check
   list_objects
-  put_objects
+  put_object
+  get_object
 end

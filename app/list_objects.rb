@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-def list_objects # rubocop:disable Metrics/MethodLength
+def list_objects
   puts '===== ===== ===== ===== ====='
   puts '===== Listing Objects ====='
   puts '===== ===== ===== ===== ====='
