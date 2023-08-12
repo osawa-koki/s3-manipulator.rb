@@ -6,6 +6,12 @@ source 'https://rubygems.org'
 
 gem 'aws-sdk-s3', '~> 1.132'
 
-gem 'rubocop', '~> 1.56'
-
 gem 'dotenv', '~> 2.8'
+
+group :development do
+  gem 'rubocop', '~> 1.56'
+end
+
+group :test do
+  gem 'rspec', '~> 3.12'
+end
