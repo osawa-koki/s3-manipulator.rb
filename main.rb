@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-require './app/handler'
+require_relative './app/handler'
 
 handler
