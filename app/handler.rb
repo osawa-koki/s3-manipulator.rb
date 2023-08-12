@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
+require 'aws-sdk-s3'
 require 'dotenv'
 
-require_relative './existence_check'
+require_relative './check_existence'
 require_relative './list_objects'
 require_relative './put_object'
 require_relative './get_object'
+require_relative './delete_object'
 
 $s3_bucket_name = nil
 
@@ -17,8 +19,9 @@ end
 def handler
   init
 
-  existence_check
+  check_existence
   list_objects
   put_object
   get_object
+  delete_object
 end
