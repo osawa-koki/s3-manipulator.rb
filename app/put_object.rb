@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'aws-sdk-s3'
-require 'json'
-
 # This class builds a message from a random prefix and flower name.
 class MessageBuilder
   # rubocop:disable Style/ClassVars
