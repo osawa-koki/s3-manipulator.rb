@@ -37,16 +37,6 @@ class MessageBuilder
   end
 end
 
-def existence_check
-  puts '===== ===== ===== ===== ====='
-  puts '===== Checking Existence ====='
-  puts '===== ===== ===== ===== ====='
-
-  s3 = Aws::S3::Client.new
-  resp = s3.head_bucket(bucket: $s3_bucket_name)
-  puts resp
-end
-
 def put_object
   puts '===== ===== ===== ===== ====='
   puts '===== Putting Objects ====='

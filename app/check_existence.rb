@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-def existence_check
+def check_existence
   puts '===== ===== ===== ===== ====='
   puts '===== Existence Check ====='
   puts '===== ===== ===== ===== ====='
